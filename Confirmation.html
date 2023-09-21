@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Unlock Prospects</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/Favicon 1-2.webp\" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- <script src="/Users/alexlangone/Desktop/Unlock Prospects/Website/js/scripts.js"></script> -->
+        <!-- <script src="js/formSubmit.js"></script> -->
+
+        <!-- Fonts-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#!">
+                    <img src="/assets/Logo Header 1-2.png" alt="Logo-Header">
+                </a>                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="https://unlockprospects.com" style="font-size: 20px;">Home</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="https://unlockprospects.com/case-studies">Case Studies</a></li> -->
+                        <li class="nav-item"><a class="nav-link" href="#contact" id="contactLink" style="font-size: 20px;">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header id="home" class="bg-dark py-5">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="text-center my-5">
+                            <h1 class="display-5 fw-boldest text-white-gradient mb-5" style="font-size: 48px; font-family: comfortaa;" >DO YOU WANT MORE LEADS?</h1>
+                            <p class="lead text-white-50 mb-2" style="font-size: 18px; font-weight: 500; margin-top: 30px;">Getting engaged leads can be hard. We make it easy.</p>
+                            <p class="lead text-white-50 mb-4" style="font-size: 18px; font-weight: 500; margin-top: 10px;">
+                                Access our FREE <span style="color:rgb(255, 255, 255); font-weight: 700;">'More Leads Than Most Can Handle In 30 Days'</span> Promotion below.
+                            </p>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                                <!-- Replace the following anchor tag with the new button -->
+                                <button class="btn btn-primary btn-lg px-4 me-sm-3 cta-button" id="showContactFormButton" style="width: 50%; font-family: Barlow Condensed;">Yes! Get Me Leads!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <!-- Popup container for the contact form -->
+        <div id="contactPopupContainer" class="popup-container blur-background" >
+            <!-- id="contactPopupContainer" class="popup-container" -->
+            <!-- Your contact form HTML goes here -->
+            <section class="centered-half">
+                <div class="container px-5 my-5 px-5">
+                    <div id="contact" class="text-center mb-5">
+                        <!-- Add your contact section content here -->
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-6>
+                        <script type="text/javascript"></script>
+                        <iframe name="hiddenConfirm1" id="hiddenConfirm1" style="display: none;" onload="if(submitted){window.location='Confirmation1.html';}"></iframe>
+                        <form action="#" id="contactForm1" method="post" target="hiddenConfirm" onsubmit="validateFormAndSubmit();">
+                            <h3 class="text-center form-title">Get More Leads Than Most Can Handle in 30 Days</h3>
+
+                            <!-- First Name input -->
+                            <div class="form-floating mb-3 cta-input-background" style="font-weight: 600;">
+                                <input class="form-control cta-input-background" id="firstName" type="text" placeholder="Enter your first name..." data-sb-validations="required" name="entry.720938598"/>
+                                <label for="firstName">First Name</label>
+                                <div class="invalid-feedback" data-sb-feedback="firstName:required">A first name is required.</div>
+                            </div>
+
+                            <!-- Last Name input -->
+                            <div class="form-floating mb-3 cta-input-background" style="font-weight: 600;">
+                                <input class="form-control cta-input-background" id="lastName" type="text" placeholder="Enter your last name..." data-sb-validations="required" name="entry.1103759101" />
+                                <label for="lastName">Last Name</label>
+                                <div class="invalid-feedback" data-sb-feedback="lastName:required">A last name is required.</div>
+                            </div>
+
+                            <!-- Email address input -->
+                            <div class="form-floating mb-3 cta-input-background" style="font-weight: 600;">
+                                <input class="form-control cta-input-background" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" name="entry.460222799"/>
+                                <label for="email">Email</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+
+                            <!-- Phone number input -->
+                            <div class="form-floating mb-3 cta-input-background" style="font-weight: 600;">
+                                <input class="form-control cta-input-background" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" name="entry.1487472415" />
+                                <label for="phone">Enter Mobile Number</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="d-grid"><button class="btn btn-primary btn-lg cta-button" id="submitButton1" type="submit" style="font-family: Barlow Condensed;" >Yes! Get Me Leads!</button></div>
+                        </form>         
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Features section-->
+        <section class="py-5 border-bottom" id="features">
+            <div class="container px-5 my-5">
+                <div class="row gx-5">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div class="center-content2">
+                        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                        <lord-icon
+                            src="https://cdn.lordicon.com/wgydzbzz.json"
+                            trigger="hover"
+                            colors="primary:#9f7820,secondary:#ffdf85"
+                            style="width:90px;height:90px">
+                        </lord-icon>
+                        <h2 class="h4">Attract *Blank* Buyers</h2>
+                        <p>Our expertise is in assisting *Blank* like yours in attracting potential buyers. We deliver leads composed of individuals genuinely interested in your *product/service*.</p>
+                        <!-- <a class="text-decoration-none" href="#!">
+                            Call to action
+                            <i class="bi bi-arrow-right"></i>
+                        </a> -->
+                    </div>
+                    </div>
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div class="center-content2">
+                            <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                            <lord-icon
+                                src="https://cdn.lordicon.com/tbfrtmlu.json"
+                                trigger="hover"
+                                colors="primary:#9f7820,secondary:#ffdf85"
+                                style="width:90px;height:90px">
+                            </lord-icon>
+                        <h2 class="h4">Increase Sales</h2>
+                        <p>Keep sales teams at full capacity by consistently delivering them with better-targeted and engaged leads leads.</p>
+                        <!-- <a class="text-decoration-none" href="#!">
+                            Call to action
+                            <i class="bi bi-arrow-right"></i>
+                        </a> -->
+                    </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="center-content2">
+                        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                        <lord-icon
+                            src="https://cdn.lordicon.com/uutnmngi.json"
+                            trigger="hover"
+                            colors="primary:#9f7820,secondary:#ffdf85"
+                            style="width:90px;height:90px">
+                        </lord-icon>
+                        <h2 class="h4">Leads Within 24 Hours</h2>
+                        <p>Within 24 hours of signing up, we kickstart lead generation, connecting you with engaged prospects through our data-driven approach.</p>
+                        <!-- <a class="text-decoration-none" href="#!">
+                            Call to action
+                            <i class="bi bi-arrow-right"></i>
+                        </a> -->
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Promotion Section-->
+        <section class="bg-light py-5 border-bottom">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 justify-content-center mb-5">
+                    <div class="col-md-12 text-center">
+                        <h2 class="fw-bolder margin-top-17" style="font-size: 42px;">More Leads Than Most Can Handle Promotion</h2>
+                    </div>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-md-6 text-center mb-5">
+                        <h2 class="fw-less-bold margin-bottom-20 margin-top-40 margin-top-remove-40">We Are Taking on 5 Free Case Studies</h2>
+                        <p class="margin-bottom-minus-20">Unleash your business's potential with our exclusive "More Leads Than Most Can Handle" promotion – a limited-time offer for 5 businesses. Experience a full month of lead generation services with no service fee. Benefit from strategic advertising, targeted nurturing, and expert lead conversion. We deliver More Leads Than Most Can Handle In just 30 days, requiring no effort on your end except paying for the advertising. Share your success through a video testimonial, and allow us to showcase your journey as a compelling case study. Elevate your brand, expand your customer base, and redefine your success – all while paying nothing for our premium services. Don't miss this opportunity to supercharge your business growth.</p>
+                    </div>
+                    <div class="col-md-6 text-center mb-5 margin-top-40 margin-bottom-minus-20 hide-tablet">
+                        <img src="/assets/gold undraw 1-1.png" alt="gold-undraw" style="max-width: 40%;">
+                    </div>
+                </div>
+            </div>
+        </section>        
+        <!-- Testimonials section-->
+        <!-- <section class="py-5 border-bottom">
+            <div class="container px-5 my-5 px-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Customer testimonials</h2>
+                    <p class="lead mb-0">Our customers love working with us</p>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6"> -->
+                        <!-- Testimonial 1-->
+                        <!-- <div class="card mb-4">
+                            <div class="card-body p-4">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
+                                    <div class="ms-4">
+                                        <p class="mb-1">Thank you for putting together such a great product. We loved working with you and the whole team, and we will be recommending you to others!</p>
+                                        <div class="small text-muted">- Client Name, Location</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- Testimonial 2-->
+                        <!-- <div class="card">
+                            <div class="card-body p-4">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
+                                    <div class="ms-4">
+                                        <p class="mb-1">The whole team was a huge help with putting things together for our company and brand. We will be hiring them again in the near future for additional work!</p>
+                                        <div class="small text-muted">- Client Name, Location</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- Contact section-->
+        <section class="bg-lightish py-5">
+            <div class="container px-5 my-5 px-5">
+                <div id="contact" class="text-center mb-5">
+                    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/sdhhsgeg.json"
+                        trigger="hover"
+                        colors="primary:#9f7820,secondary:#ffdf85"
+                        style="width:150px;height:150px">
+                    </lord-icon>
+                    <h2 class="fw-bolder">Submission Recieved</h2>
+                    <p class="lead mb-0">We'll contact you within 24 hours</p>
+                </div>
+                <div class="row gx-5 justify-content-center" id="#contact">
+                    <a id="bottom"></a>
+                    <div class="col-lg-6">
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const yearSpan = document.getElementById("currentYear");
+                const currentYear = new Date().getFullYear();
+                yearSpan.textContent = currentYear;
+            });
+        </script>
+        <footer class="py-5 bg-dark">
+            <div class="container px-5"><p class="m-0 text-center text-white">Copyright &copy; Unlock Prospects LLC <span id="currentYear"></span></p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/popup.js"></script>
+        <script src="js/formValidationAndSubmission.js"></script>
+        <script src="js/menuToPopup.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
+    </body>
+</html>
