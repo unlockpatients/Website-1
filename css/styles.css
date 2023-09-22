@@ -487,7 +487,7 @@ progress {
 }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 300;
 }
 
@@ -3805,6 +3805,90 @@ textarea.form-control-lg {
 }
 .navbar-brand:hover, .navbar-brand:focus {
   color: var(--bs-navbar-brand-hover-color);
+}
+
+.navbar-brand img {
+  max-width: 30%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Use media queries to adjust image size based on screen width */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    width: 100%; /* Adjust the percentage as needed */
+    max-width: none; /* Remove max-width constraint for smaller screens */
+  }
+}
+
+/* Keep the image smaller on screens between 769px and 1099px */
+/* Center the image and adjust its size on screens between 769px and 991px */
+@media (min-width: 769px) and (max-width: 991px) {
+  .navbar-brand {
+    text-align: center; /* Center-align the content inside .navbar-brand */
+  }
+
+  .navbar-brand img {
+    width: 70%; /* Adjust the percentage as needed */
+    max-width: none; /* Remove max-width constraint for larger screens */
+    display: block; /* Ensure the image is centered */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+}
+
+
+/* Enlarge the image on screens of 1100px or larger */
+@media (min-width: 992px) and (max-width:1600px) {
+  .navbar-brand img {
+    width: 45%; /* Adjust the percentage as needed */
+    max-width: none; /* Remove max-width constraint for larger screens */
+  }
+}
+
+
+
+@media (min-width: 1401px) {
+  .navbar-brand img {
+    width: 40%; /* Adjust the percentage as needed for larger screens */
+    max-width: none;
+  }
+
+}
+/* Center the button when screen width is at most 991px */
+@media (max-width: 991px) {
+  .navbar-toggler {
+    display: block; /* Ensure the button takes up the full width */
+    margin: 0 auto; /* Center the button horizontally */
+  }
+}
+
+/* Center the collapse div and its child ul when screen width is at most 991px */
+@media (max-width: 991px) {
+  .collapse.navbar-collapse {
+    text-align: center; /* Center-align the content inside the collapse div */
+  }
+
+  .navbar-nav {
+    display: inline-block; /* Make the ul a block element to center it */
+  }
+}
+@media (max-width: 991px) {
+  .navbar-collapse {
+    text-align: center; /* Center-align the content inside the collapse div */
+    max-height: none; /* Remove the max-height constraint */
+    transition: none; /* Remove transitions for immediate display */
+  }
+
+  .navbar-nav {
+    display: inline-block; /* Make the ul a block element to center it */
+  }
+}
+
+/* Add specific styles for the expanded state */
+@media (max-width: 991px) {
+  .navbar-collapse.show {
+    text-align: center; /* Center-align the content when expanded */
+    transition: none; /* Remove transitions for immediate display */
+  }
 }
 
 .navbar-nav {
@@ -11050,13 +11134,13 @@ border-style:ridge;
   font-weight: 600 !important;
   color: #fff !important;
   border: none !important;
-  width: 100%;
   max-width: 55rem !important;
   height: 75px !important;
   cursor: pointer !important;
   background: linear-gradient(to top right, #956D13, #FFEC94) !important;
   box-shadow: 0px 7px 50px -12px #FFD87C !important;
 }
+
 
 
 .form-title {
@@ -11070,3 +11154,7 @@ border-style:ridge;
   color: transparent;
   margin-bottom: 46px;
 }
+
+
+
+
