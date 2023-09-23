@@ -3839,7 +3839,7 @@ textarea.form-control-lg {
 /* Enlarge the image on screens of 1100px or larger */
 @media (min-width: 992px) and (max-width:1600px) {
   .navbar-brand img {
-    width: 45%; /* Adjust the percentage as needed */
+    width: 40%; /* Adjust the percentage as needed */
     max-width: none; /* Remove max-width constraint for larger screens */
   }
 }
@@ -3848,7 +3848,7 @@ textarea.form-control-lg {
 
 @media (min-width: 1401px) {
   .navbar-brand img {
-    width: 40%; /* Adjust the percentage as needed for larger screens */
+    width: 35%; /* Adjust the percentage as needed for larger screens */
     max-width: none;
   }
 
@@ -7899,6 +7899,11 @@ textarea.form-control-lg {
   padding-bottom: 3rem !important;
 }
 
+.py-6b{
+  padding-top: 0rem !important;
+  padding-bottom: 3rem !important;
+}
+
 .pt-0 {
   padding-top: 0 !important;
 }
@@ -11155,6 +11160,19 @@ border-style:ridge;
   margin-bottom: 46px;
 }
 
+/* Define the animation keyframes */
+@keyframes slideInFromBottom {
+  0% {
+      transform: translateY(40%);
+      opacity: 0.2; /* Lower initial opacity */
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
 
-
-
+/* Define a CSS class to apply the animation */
+.slide-in {
+  animation: slideInFromBottom 1s ease-in-out;
+}
