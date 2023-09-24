@@ -3939,6 +3939,8 @@ textarea.form-control-lg {
   border-radius: var(--bs-navbar-toggler-border-radius);
   transition: var(--bs-navbar-toggler-transition);
 }
+
+
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
     transition: none;
@@ -3955,8 +3957,8 @@ textarea.form-control-lg {
 
 .navbar-toggler-icon {
   display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
+  width: 1.25em;
+  height: 1.25em;
   vertical-align: middle;
   background-image: var(--bs-navbar-toggler-icon-bg);
   background-repeat: no-repeat;
@@ -7693,9 +7695,20 @@ textarea.form-control-lg {
   margin-bottom: 1.5rem !important;
 }
 
-.my-5 {
-  margin-top: 3rem !important;
-  margin-bottom: 3rem !important;
+/* For screens 992px and above */
+@media (min-width: 992px) {
+  .my-5 {
+      margin-top: 3rem !important;
+      margin-bottom: 3rem !important;
+  }
+}
+
+/* For screens 991px and below */
+@media (max-width: 991px) {
+  .my-5bm {
+      margin-top: 1.5rem;
+      margin-bottom: 3rem !important;
+  }
 }
 
 .my-auto {
@@ -11071,10 +11084,12 @@ p{
   z-index: 9999; /* Ensure the background is behind the popup */
 }
 
-.centered-half{
-  width: 40%;
+.centered-half {
+  max-width: 600px; /* Adjust the maximum width as needed for desktop screens */
   margin: 0 auto;
+  width: 90%; /* Add a maximum width percentage for smaller screens */
 }
+
 
 #contactForm1 {
   background-color: #1C1D1F; /* Set the background color for the form */
@@ -11086,19 +11101,36 @@ p{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a box shadow for depth */
 }
 
-.cta-input-background {
-    box-shadow: none; /* Remove any focus box-shadow (for older browsers) */
-    font-size: 1.2rem;
-    font-size: 1.1rem;
-    border-radius: 50em;
-    border: 1px solid #2B2C30;
-    color: #757577!important;
-    background-color: #242526 !important;
-    width: 100%;
-    max-width: 30rem;
-    height: 60px;
-    line-height: normal;
+@media (max-width: 600px) {
+  #contactForm1 {
+    padding: 2em; /* Keep the padding */
+    background-size: 90%; /* Adjust the background size as needed */
+  }
 }
+
+@media (max-width: 600px) {
+  .form-title {
+    font-size: 32px !important; /* Adjust the font size as needed */
+  }
+}
+
+
+.cta-input-background {
+  box-shadow: none; /* Remove any focus box-shadow (for older browsers) */
+  font-size: 1.2rem;
+  font-size: 1.1rem;
+  border-radius: 50em;
+  border: 1px solid #2B2C30;
+  color: #757577!important;
+  background-color: #242526 !important;
+  width: 100%;
+  max-width: 100%; /* Ensure inputs are responsive */
+  height: 60px;
+  line-height: normal;
+}
+
+
+
 
 .cta-input-background:focus{
   box-shadow: none;
@@ -11118,9 +11150,11 @@ p{
   color: #8C8D8D!important;
   background-color: #FFFFFF !important;
   width: 100%;
+  max-width: 100%; /* Ensure inputs are responsive */
   height: 60px;
   line-height: normal;
 }
+
 
 .cta-input-background2:focus{
 box-shadow: none;
@@ -11146,18 +11180,29 @@ border-style:ridge;
   box-shadow: 0px 7px 50px -12px #FFD87C !important;
 }
 
+@media (max-width: 464px) {
+  .cta-button {
+    font-size: 1.36rem !important;
+    padding: 0.4rem .8rem !important;
+    height: 60px !important;
+    max-width: 20rem !important;
+    margin-top: 20px !important;
+
+  }
+}
+
 
 
 .form-title {
   font-size: 42px;
-  font-weight: 700;
+  font-weight: 1000;
   text-align: center;
   font-family: comfortaa;
   background-image: linear-gradient(120deg, #fff, rgba(255, 255, 255, 0.65));
   -webkit-background-clip: text; /* For webkit browsers */
   background-clip: text;
   color: transparent;
-  margin-bottom: 46px;
+  margin-bottom: 30px;
 }
 
 /* Define the animation keyframes */
@@ -11175,4 +11220,29 @@ border-style:ridge;
 /* Define a CSS class to apply the animation */
 .slide-in {
   animation: slideInFromBottom 1s ease-in-out;
+}
+
+@media (max-width: 464px) {
+  .mobile {
+      text-align: center; /* Center align text */
+  }
+
+  .mobile .lead {
+      font-size: 18px !important; /* Adjust the font size as needed */
+  }
+
+  .mobile h1 {
+      font-size: 38px !important; /* Adjust the font size as needed */
+  }
+
+  .mobile p {
+      font-size: 18px !important; /* Adjust the font size as needed */
+  }
+
+}
+
+@media (max-width: 464px) {
+.display-5 {
+    font-size: 40.5px !important; /* Adjust the font size as needed */
+  }
 }
