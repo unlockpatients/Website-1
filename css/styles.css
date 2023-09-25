@@ -11120,8 +11120,10 @@ p{
 
 @media (max-width: 600px) {
   #contactForm1 {
+    position: relative;
     padding: 1.5em; 
     background-size: 90%; /* Adjust the background size as needed */
+    bottom: 30px;
   }
 }
 
