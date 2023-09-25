@@ -11008,6 +11008,19 @@ p{
   margin-bottom: 20px;
 }
 
+@media (max-width: 767px){
+  .margin-bottom-mobile-20{
+    margin-bottom: 20px;
+    translate: 8%;
+  }
+}
+
+@media (max-width: 767px){
+  .center-adjust{
+    translate: 8%;
+  }
+}
+
 .margin-top-40{
   margin-top: 40px;
 }
@@ -11073,6 +11086,10 @@ p{
   z-index: 1000; /* Ensure the popup is on top of other content */
 }
 
+/* .popup-mobile{
+  font-size: 15% !important;
+} */
+
 .blur-background {
   backdrop-filter: blur(3px); /* Adjust the blur strength as needed */
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
@@ -11085,7 +11102,7 @@ p{
 }
 
 .centered-half {
-  max-width: 600px; /* Adjust the maximum width as needed for desktop screens */
+  max-width: 500px; /* Adjust the maximum width as needed for desktop screens */
   margin: 0 auto;
   width: 90%; /* Add a maximum width percentage for smaller screens */
 }
@@ -11103,7 +11120,7 @@ p{
 
 @media (max-width: 600px) {
   #contactForm1 {
-    padding: 2em; /* Keep the padding */
+    padding: 1.5em; 
     background-size: 90%; /* Adjust the background size as needed */
   }
 }
@@ -11244,5 +11261,17 @@ border-style:ridge;
 @media (max-width: 464px) {
 .display-5 {
     font-size: 40.5px !important; /* Adjust the font size as needed */
+  }
+}
+
+@media (max-width: 767px){
+  .margin-bottom-mobile-20{
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1001px){
+  .desktop-padding-left{
+    padding-left: 15%;
   }
 }
