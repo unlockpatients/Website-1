@@ -7706,7 +7706,7 @@ textarea.form-control-lg {
 /* For screens 991px and below */
 @media (max-width: 991px) {
   .my-5bm {
-      margin-top: 1.5rem;
+      margin-top: 3.5rem;
       margin-bottom: 3rem !important;
   }
 }
@@ -11020,6 +11020,9 @@ p{
     translate: 8%;
   }
 }
+
+
+
 
 .margin-top-40{
   margin-top: 40px;
