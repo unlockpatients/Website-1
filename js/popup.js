@@ -25,3 +25,10 @@ contactPopupContainer.addEventListener('click', (event) => {
     }
 });
 
+const showContactFormButton2 = document.getElementById('showContactFormButton2');
+
+showContactFormButton2.addEventListener('click', () => {
+    console.log('Button clicked'); // Check if this message appears in the console
+    contactPopupContainer.style.display = 'block'; // Show the contact form popup
+   
+});
